@@ -1,39 +1,53 @@
 
 body {
 	background-color:#f4f3ee;
-	margin-left: auto;
-    margin-right: auto;
-    width: 45em
-
 }
 
 
 a {
 
  color: #646ead;
+
 }
 h1 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
-	color: #646ead;
-	text-align: center;
+	color: #5e5e5b;
+	text-align: left;
+	font-size: 2.8em;
+	margin-bottom: 0em;
+	margin-top: 0.24em;
+	-webkit-font-smoothing: antialiased;
+
+
+	background-image: linear-gradient(180deg,transparent 75%,#646ead 0);
+	background-size: 100% 94%;
+    background-repeat: no-repeat;
+
 
 }
 
 h2 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
 	color: #5e5e5b;
-	text-align: center;
+	margin-top:0.4em;
+	-webkit-font-smoothing: antialiased;
+	font-weight:lighter;
+	font-size: 2em;
+	-webkit-font-smoothing: antialiased;
+	
 }
 
 h3 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
 	color: #adaba6;
+	-webkit-font-smoothing: antialiased;
 }
 
 h4 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
 	color: #646ead;
 	margin-bottom:-0.6em;
+	-webkit-font-smoothing: antialiased;
 
 
 }
@@ -41,22 +55,25 @@ h4 {
 h5 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
 	color: #adaba6;
+	-webkit-font-smoothing: antialiased;
 }
 
 h6 {
 	font-family: "Myriad Pro", Helevetica Neue, sans-serif;
 	color: #5e5e5b;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
 }
 
 img {
-	max-width: 24em;
+	max-width: 25em;
 }
 
 p {
 	color: #5e5e5b;
 	font-family: "Minion Pro", Georgia, serif;
-	line-height: 1.4em;
+	line-height: 1.6em;
+	-webkit-font-smoothing: antialiased;
 	
 }
 
@@ -66,6 +83,7 @@ li {
 	list-style-type: none;
 	padding-left: 0;
 	line-height: 1.4em;
+	-webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -79,11 +97,19 @@ ul {
 	text-align: center;
 }
 
+.contact {
+	display:block;
+    text-align:center;
+    margin: auto;
+    width:;
+}
+
 .row {
 
 	margin-left: auto;
     margin-right: auto;
     width: 40em
+    margin-right: 2em;
 }
 .row:after {
 	content: "";
@@ -92,20 +118,101 @@ ul {
 }
 
 
+.element{
+			shape-outside:url(nora3.png);
+			shape-image-threshold: 0.5;
+			float:right;
+			margin-right:-8em;
+			
+			/*border-radius: 50%;*/
+			/*border-spacing: 60px;*/
+
+		}
 
 
 .header {
+	padding-left: 4em;
+	margin-top: 3.2em;
 	margin-left: auto;
-    margin-right: auto;
-    width: 30em
+    margin-right: 27em;
+    width: auto;
+}
+
+.subheader {
+	padding-left: 4em;
+	margin-top: 2.4em;
+	margin-left: auto;
+    margin-right: 10.5em;
+    width: auto;
+    margin-top: 0;
 }
 
 
 .footer {
-	margin-top: 10em;
+	margin-top: 6em;
 	margin-left: auto;
     margin-right: auto;
     margin-bottom: 3em;
     width: 30em
 
 }
+
+.skills {
+	background-color: #f6f9fb;
+	overflow: visible;
+	
+}
+
+.wrapper{
+	margin-left: 24%;
+    margin-right: 24%;
+    width: 45em;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+
+}
+
+
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0;  Stay on top;
+    top: 8em;  Stay at the top;
+    left: 3.2em;
+
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+   
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: inline-block;
+    font-family: "Myriad Pro", Helevetica Neue, sans-serif;
+	color: #adaba6;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #5e5e5b;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
